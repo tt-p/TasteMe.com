@@ -11,7 +11,6 @@ namespace Bim308_FinalProject.TasteMe.com.src
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void FormView1_ItemInserted(object sender, FormViewInsertedEventArgs e)

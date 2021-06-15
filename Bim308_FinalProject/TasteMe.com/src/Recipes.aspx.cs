@@ -15,17 +15,6 @@ namespace Bim308_FinalProject.TasteMe.com.src
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            setCategories();
-        }
-
-        private void setCategories()
-        {
-            con = DBcon.Singleton.GetCon();
-            con.Open();
-            OleDbCommand oleDbCommand = new OleDbCommand("Select * From categories", con);
-            OleDbDataReader reader = oleDbCommand.ExecuteReader();
-            dlCat.DataSource = reader;
-            dlCat.DataBind();
         }
 
         protected void btnMore_Click(object sender, EventArgs e)

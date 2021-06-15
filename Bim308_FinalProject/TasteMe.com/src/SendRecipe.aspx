@@ -48,7 +48,7 @@
                 <asp:ListItem Value="12">Misscellaneus</asp:ListItem>
             </asp:DropDownList>
             <br />
-            <asp:LinkButton CssClass="btn" ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Send" OnClick="InsertButton_Click" BackColor="#E45D27" ForeColor="White" />
+            <asp:LinkButton CssClass="btn" ID="InsertButton" runat="server" CausesValidation="True" Text="Send" OnClick="InsertButton_Click" BackColor="#E45D27" ForeColor="White" />
             &nbsp;<asp:LinkButton CssClass="btn btn-secondary" ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </div>
     </form>

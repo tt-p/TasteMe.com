@@ -9,15 +9,6 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-     <div class="col-4 cat-list">
-        <asp:Label runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="#E45D27"> Catagories </asp:Label>
-        <hr>
-        <asp:DataList ID="dlCat" runat="server">
-            <ItemTemplate>
-                <asp:Label ID="Label1" runat="server" Text='<%# Eval("c_name") %>'></asp:Label>
-            </ItemTemplate>
-        </asp:DataList>
-    </div>
     <form id="form1" runat="server">
     <h2 class="text-center">Recipes </h2>
     <div>

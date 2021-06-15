@@ -32,13 +32,15 @@ namespace Bim308_FinalProject.TasteMe.com.src
                 cmd.Parameters.AddWithValue("@p4", r_instructsTextBox.Text);
                 cmd.Parameters.AddWithValue("@p5", int.Parse(r_prepTextBox.Text));
                 cmd.Parameters.AddWithValue("@p6", int.Parse(r_CatDD.SelectedValue));
-                cmd.Parameters.AddWithValue("@p7", (int)Session["User_id"]);
+                cmd.Parameters.AddWithValue("@p7", (int)Session["user_id"]);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
                 Response.Redirect($"DefaultError.aspx?message={ex.Message}");
             }
+
+            Response.Redirect($"Success.aspx?message=Congratulations! Your recipe has been published.");
         }
     }
 }
