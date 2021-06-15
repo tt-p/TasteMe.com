@@ -123,6 +123,15 @@ namespace Bim308_FinalProject.TasteMe.com.src
         protected global::System.Web.UI.WebControls.DropDownList r_CatDD;
 
         /// <summary>
+        /// upImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload upImage;
+
+        /// <summary>
         /// InsertButton control.
         /// </summary>
         /// <remarks>

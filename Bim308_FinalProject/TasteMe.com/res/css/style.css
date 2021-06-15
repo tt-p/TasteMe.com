@@ -80,7 +80,8 @@ header a {
 .header-img-aboutus,
 .header-img-contact,
 .header-img-register,
-.header-img-send {
+.header-img-send,
+.header-img-profile {
     height: 300px;
     background-color: #000000;
     background-repeat: no-repeat;
@@ -107,6 +108,9 @@ header a {
 }
 .header-img-send {
     background-image: url("../header/header_sendRecipe.jpg");
+}
+.header-img-profile {
+    background-image: url("../header/header_profile.jpg");
 }
 
 /* FOOTER */
@@ -179,7 +183,7 @@ footer h5 {
     height: 600px;
 }
 
-.d-about, .d-team, .d-contact, .d-register, .d-login, .d-send {
+.d-about, .d-team, .d-contact, .d-register, .d-login, .d-send, .d-profile {
     width: 50%;
     top: 2px;
     left: 327px;

@@ -83,11 +83,10 @@
     <Content Include="TasteMe.com\res\img-recipe\i-16.jpg" />
     <Content Include="TasteMe.com\res\img-recipe\i-17.jpg" />
     <Content Include="TasteMe.com\res\img-recipe\i-18.jpg" />
-    <Content Include="TasteMe.com\res\img-recipe\i-19.jpg" />
     <Content Include="TasteMe.com\res\img-recipe\i-2.jpg" />
     <Content Include="TasteMe.com\res\img-recipe\i-13.jpg" />
     <Content Include="TasteMe.com\res\img\login_back.jpg" />
-    <Content Include="TasteMe.com\res\img\notused.jpg" />
+    <Content Include="TasteMe.com\res\header\header_profile.jpg" />
     <Content Include="TasteMe.com\res\header\header_home.jpg" />
     <Content Include="TasteMe.com\res\icon\call.png" />
     <Content Include="TasteMe.com\res\icon\mail.png" />
@@ -98,10 +97,12 @@
     <Content Include="TasteMe.com\res\team\team1.png" />
     <Content Include="TasteMe.com\res\team\team2.png" />
     <Content Include="TasteMe.com\src\AboutUs.aspx" />
+    <Content Include="TasteMe.com\src\Admin.aspx" />
     <Content Include="TasteMe.com\src\Contact.aspx" />
     <Content Include="TasteMe.com\src\DefaultError.aspx" />
     <Content Include="Global.asax" />
     <Content Include="TasteMe.com\src\Home.aspx" />
+    <Content Include="TasteMe.com\src\Profile.aspx" />
     <Content Include="TasteMe.com\src\RecipeDetails.aspx" />
     <Content Include="TasteMe.com\src\Recipes.aspx" />
     <Content Include="TasteMe.com\src\Register.aspx" />
@@ -117,6 +118,13 @@
     </Compile>
     <Compile Include="TasteMe.com\src\AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TasteMe.com\src\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TasteMe.com\src\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="TasteMe.com\src\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -148,6 +156,13 @@
     </Compile>
     <Compile Include="TasteMe.com\src\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TasteMe.com\src\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TasteMe.com\src\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="TasteMe.com\src\RecipeDetails.aspx.cs">
       <DependentUpon>RecipeDetails.aspx</DependentUpon>

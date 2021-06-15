@@ -47,9 +47,11 @@
                 <asp:ListItem Value="11">Appetizers</asp:ListItem>
                 <asp:ListItem Value="12">Misscellaneus</asp:ListItem>
             </asp:DropDownList>
+            <asp:FileUpload CssClass="form-control" ID="upImage" runat="server" Width="100%" />
             <br />
             <asp:LinkButton CssClass="btn" ID="InsertButton" runat="server" CausesValidation="True" Text="Send" OnClick="InsertButton_Click" BackColor="#E45D27" ForeColor="White" />
             &nbsp;<asp:LinkButton CssClass="btn btn-secondary" ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </div>
     </form>
+    <hr />
 </asp:Content>

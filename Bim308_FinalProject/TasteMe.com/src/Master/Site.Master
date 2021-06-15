@@ -75,6 +75,9 @@
                 <li id="liRegister" class="nav-item" runat="server">
                     <a class="nav-link" href="Register.aspx">Register</a>
                 </li>
+                <li id="liProfile" class="nav-item" runat="server">
+                    <a class="nav-link" href="Profile.aspx">Profile</a>
+                </li>
             </ul>
         </div>
     </nav>

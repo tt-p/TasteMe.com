@@ -19,6 +19,7 @@ namespace Bim308_FinalProject.TasteMe.com.src
             else
             {
                 liSend.Visible = false;
+                liProfile.Visible = false;
             }
             lblUsers.Text = $"Active Users : {Application["NumOnlineUsers"]}";
         }

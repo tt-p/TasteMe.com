@@ -62,7 +62,16 @@ namespace Bim308_FinalProject.TasteMe.com.src
             if (id != -1)
             {
                 Session["user_id"] = id;
-                Response.Redirect(Request.RawUrl);
+                if (id == 1)
+                {
+                    Response.Redirect("Admin.aspx");
+                }
+                else
+                {
+                    
+                    Response.Redirect(Request.RawUrl);
+                }
+
             }
             else
             {
