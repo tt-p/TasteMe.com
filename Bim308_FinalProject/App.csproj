@@ -185,6 +185,9 @@
     <Content Include="TasteMe.com\res\header\header_register.jpg" />
     <Content Include="TasteMe.com\res\header\header_sendRecipe.jpg" />
     <Content Include="TasteMe.com\res\img-recipe\empty.jpg" />
+    <Content Include="TasteMe.com\res\img-recipe\i-14.jpg" />
+    <Content Include="TasteMe.com\res\img-recipe\i-2.jpg" />
+    <Content Include="TasteMe.com\res\img-recipe\i-13.jpg" />
     <Content Include="TasteMe.com\res\img\login_back.jpg" />
     <Content Include="TasteMe.com\res\img\notused.jpg" />
     <Content Include="TasteMe.com\res\header\header_home.jpg" />

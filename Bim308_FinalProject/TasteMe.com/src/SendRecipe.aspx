@@ -9,7 +9,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="body" runat="server">
     <form id="form1" runat="server">
-        <div class="container d-register">
+        <div class="container d-send">
             <h2 class="text-center">Recipe Form</h2>
             <hr />
             Name
@@ -28,19 +28,9 @@
             <asp:TextBox CssClass="form-control" ID="r_instructsTextBox" runat="server" TextMode="MultiLine" />
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="r_instructsTextBox" ErrorMessage="RequiredFieldValidator" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
-            Rate<br />
-            <asp:DropDownList CssClass="form-control" ID="r_rateDD" runat="server">
-                <asp:ListItem Value="1"></asp:ListItem>
-                <asp:ListItem Value="2"></asp:ListItem>
-                <asp:ListItem Value="3"></asp:ListItem>
-                <asp:ListItem Value="4"></asp:ListItem>
-                <asp:ListItem Value="5"></asp:ListItem>
-                <asp:ListItem Value="6"></asp:ListItem>
-                <asp:ListItem Value="7"></asp:ListItem>
-                <asp:ListItem Value="8"></asp:ListItem>
-                <asp:ListItem Value="9"></asp:ListItem>
-                <asp:ListItem Selected="True" Value="10"></asp:ListItem>
-            </asp:DropDownList>
+            Preparation time:<br />
+            <asp:TextBox CssClass="form-control" ID="r_prepTextBox" runat="server" TextMode="Number"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="r_prepTextBox" ErrorMessage="RequiredFieldValidator" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
             Category<br />
             <asp:DropDownList CssClass="form-control" ID="r_CatDD" runat="server">

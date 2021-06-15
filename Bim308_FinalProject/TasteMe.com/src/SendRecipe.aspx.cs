@@ -21,7 +21,7 @@ namespace Bim308_FinalProject.TasteMe.com.src
 
         protected void InsertButton_Click(object sender, EventArgs e)
         {
-            string cmdStr = $"INSERT INTO [recipes] ([r_name], [r_desc], [r_ingreds], [r_instructs], [r_rate], [c_id], [u_id]) VALUES (?, ?, ?, ?, ?, ?, ?)";
+            string cmdStr = $"INSERT INTO [recipes] ([r_name], [r_desc], [r_ingreds], [r_instructs], [r_prep], [c_id], [u_id]) VALUES (?, ?, ?, ?, ?, ?, ?)";
             try
             {
                 con.Open();
@@ -30,7 +30,7 @@ namespace Bim308_FinalProject.TasteMe.com.src
                 cmd.Parameters.AddWithValue("@p2", r_descTextBox.Text);
                 cmd.Parameters.AddWithValue("@p3", r_ingredsTextBox.Text);
                 cmd.Parameters.AddWithValue("@p4", r_instructsTextBox.Text);
-                cmd.Parameters.AddWithValue("@p5", int.Parse(r_rateDD.SelectedValue));
+                cmd.Parameters.AddWithValue("@p5", int.Parse(r_prepTextBox.Text));
                 cmd.Parameters.AddWithValue("@p6", int.Parse(r_CatDD.SelectedValue));
                 cmd.Parameters.AddWithValue("@p7", (int)Session["User_id"]);
                 cmd.ExecuteNonQuery();

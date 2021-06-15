@@ -109,15 +109,6 @@ header a {
     background-image: url("../header/header_sendRecipe.jpg");
 }
 
-.img-login {
-    padding-top: 120px;
-    background-image: url("../img/login_back.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 600px;
-}
-
 /* FOOTER */
 .social {
     font-size: 4em;
@@ -177,8 +168,18 @@ footer h5 {
     padding-top: .5em;
 }
 
+/* OTHER */
 
-.d-about, .d-team, .d-contact, .d-register, .d-login {
+.img-login {
+    padding-top: 120px;
+    background-image: url("../img/login_back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+.d-about, .d-team, .d-contact, .d-register, .d-login, .d-send {
     width: 50%;
     top: 2px;
     left: 327px;

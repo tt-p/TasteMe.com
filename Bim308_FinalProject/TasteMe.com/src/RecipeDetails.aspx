@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TasteMe.com/src/Master/Site.Master" AutoEventWireup="true" CodeBehind="RecipeDetails.aspx.cs" Inherits="Bim308_FinalProject.TasteMe.com.src.RandomRecipe" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Recipe</title>
+    <title>Recipe Details</title>
     <style type="text/css">
         .auto-style1 {
             font-size: xx-large;
@@ -16,7 +16,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="header" runat="server">
     <div class="header-img-details">
-        <asp:Label CssClass="header-tittle" runat="server"> Random Recipe </asp:Label>
+        <asp:Label CssClass="header-tittle" runat="server"> Recipe Details </asp:Label>
     </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
@@ -29,6 +29,9 @@
                 <span class="auto-style1">&nbsp;</span><span class="auto-style2"><strong>/</strong></span><span class="auto-style1"> </span><asp:Label ID="lblName" runat="server" Font-Italic="False" Font-Size="X-Large" Text='<%# Eval("r_name") %>'></asp:Label>
                 <br />
                 <br />
+                <div class="text-center ">
+                    <asp:Image style="width:40rem; height: 30rem; object-fit:cover" CssClass="img-fluid ratio-4x3" ID="Image1" runat="server" ImageUrl='<%# Eval("r_img") %>' />
+                </div>              
                 <span class="auto-style3">Ingredients</span><br />
                 <asp:Label ID="lblIngreds" runat="server" Text='<%# Eval("r_ingreds") %>'></asp:Label>
                 <br />
@@ -37,10 +40,11 @@
                 <asp:Label ID="lblInstructs" runat="server" Text='<%# Eval("r_instructs") %>'></asp:Label>
                 <br />
                 <br />
-                <span class="auto-style3">Rate:</span>
-                <asp:Label ID="lblRate" runat="server" Text='<%# Eval("r_rate") %>'></asp:Label>
-                &nbsp;<span class="auto-style3">Publish Date:</span>
-                <asp:Label ID="lblDate" runat="server" Text='<%# Eval("r_date") %>' Font-Italic="False"></asp:Label>
+                <span class="auto-style3">Preparation time:</span>
+                <asp:Label ID="lblRate" runat="server" Text='<%# Eval("r_prep") %>'></asp:Label>
+                <span>min.<br /> <span class="auto-style3">Publish Date:</span>
+                <asp:Label ID="lblDate" runat="server" Font-Italic="False" Text='<%# Eval("r_date") %>'></asp:Label>
+                </span>
                 <hr />
                 <div class="text-center">
                     <em>by
