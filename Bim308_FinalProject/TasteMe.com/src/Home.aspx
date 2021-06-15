@@ -9,15 +9,32 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <div class="img-login text-center">
-        <asp:Label class="display-1" ID="lblWelcome" runat="server" Visible="false" Text="Welcome Back!" style="text-align: justify"></asp:Label>
-        <div id="divLogin" class="container" runat="server">
-            <div class="row d-flex justify-content-center">
-                <div class="card m-4 col-xs-12 col-sm-8 col-lg-6 col-xl-4">
-                    <div class="card-body">
-                        <h2 class="card-title mb-4 mt-1">Sign in</h2>
-                        <hr>
-                        <form runat="server">
+    <form runat="server">
+        <div class="img-login text-center">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server"
+                ConnectionString="<%$ ConnectionStrings:ConStr %>"
+                ProviderName="<%$ ConnectionStrings:ConStr.ProviderName %>"
+                SelectCommand="SELECT [u_name], [u_surname] FROM [users] WHERE ([u_id] = ?)">
+                <SelectParameters>
+                    <asp:SessionParameter Name="u_id" SessionField="user_id" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+            <div style="text-shadow: 1.5px 1.5px #e45d27;" class="display-1 text-center mx-auto">
+                <asp:FormView ID="fwWelcome" Visible="false" runat="server" DataSourceID="SqlDataSource1" Width="100%">
+                    <ItemTemplate>
+                        <span>Welcome </span>
+                        <asp:Label ID="u_nameLabel" runat="server" Text='<%# Bind("u_name") %>'></asp:Label>
+                        <asp:Label ID="u_surnameLabel" runat="server" Text='<%# Bind("u_surname") %>' />
+                        <br />
+                    </ItemTemplate>
+                </asp:FormView>
+            </div>
+            <div id="divLogin" class="container" runat="server">
+                <div class="row d-flex justify-content-center">
+                    <div class="card m-4 col-xs-12 col-sm-8 col-lg-6 col-xl-4">
+                        <div class="card-body">
+                            <h2 class="card-title mb-4 mt-1">Sign in</h2>
+                            <hr>
                             <div class="form-group">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
@@ -39,10 +56,10 @@
                             <div class="form-group">
                                 <asp:Button ID="btnLogin" CssClass="btn" runat="server" Text="Login" OnClick="btnLogin_Click" BackColor="#E45D27" ForeColor="White"></asp:Button>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </asp:Content>

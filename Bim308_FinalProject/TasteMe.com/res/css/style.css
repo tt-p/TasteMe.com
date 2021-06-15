@@ -183,7 +183,7 @@ footer h5 {
     height: 600px;
 }
 
-.d-about, .d-team, .d-contact, .d-register, .d-login, .d-send, .d-profile {
+.d-about, .d-team, .d-contact, .d-register, .d-login, .d-send, .d-profile, .d-comment {
     width: 50%;
     top: 2px;
     left: 327px;

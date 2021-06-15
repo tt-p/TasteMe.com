@@ -21,7 +21,7 @@ namespace Bim308_FinalProject.TasteMe.com.src
             if (id != -1)
             {
                 divLogin.Visible = false;
-                lblWelcome.Visible = true;
+                fwWelcome.Visible = true;
             }
             else
             {
@@ -67,8 +67,7 @@ namespace Bim308_FinalProject.TasteMe.com.src
                     Response.Redirect("Admin.aspx");
                 }
                 else
-                {
-                    
+                {                    
                     Response.Redirect(Request.RawUrl);
                 }
 
