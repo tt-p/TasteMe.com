@@ -1,4 +1,4 @@
-# Resource Management System
+# TasteMe.com
 
 ![Logo](rm-img/0.png)
 
