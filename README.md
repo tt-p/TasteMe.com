@@ -1,6 +1,6 @@
 # Resource Management System
 
-![Logo](rm-img/m0.png)
+![Logo](rm-img/0.png)
 
 TasteMe.com is a web application where anyone can easily find, read, and share recipes.
 
@@ -22,6 +22,9 @@ Resources Management:
 4.	Build the solution
 5.	Run
 
+### WEB-APPLİCATIN FLOW CHART
+
+![FlowChart](rm-img/fc.png)
 
 ## License
 
