@@ -16,7 +16,7 @@ TasteMe.com is a web application where anyone can easily find, read, and share r
 4.	Build the solution
 5.	Run
 
-### WEB-APPLİCATIN FLOW CHART
+### WEB APPLICATIN FLOW CHART
 
 ![FlowChart](rm-img/fc.png)
 
