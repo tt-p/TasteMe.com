@@ -13,5 +13,11 @@ namespace Bim308_FinalProject.TasteMe.com.src
         {
 
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session["user_id"] = -1;
+            Response.Redirect($"Home.aspx?");
+        }
     }
 }

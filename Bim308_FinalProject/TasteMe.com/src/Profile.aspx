@@ -9,7 +9,11 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="body" runat="server">
     <form id="form1" runat="server">
     <div class="container d-profile">
-        <h2 class="text-center">Profile Info</h2>
+        
+        <div class="container text-center">
+            <h2>Profile Info</h2>
+            <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="btn" ForeColor="#E45D27" OnClick="btnLogout_Click" BorderColor="#E45D27" />
+        </div>       
         <hr />
         <asp:FormView ID="FormView1" runat="server" DataKeyNames="u_id" DataSourceID="SqlDataSource1" DefaultMode="Edit" Width="100%">
             <EditItemTemplate>

@@ -24,7 +24,7 @@ namespace Bim308_FinalProject.TasteMe.com.src
         {
             string imgPath = $"~/TasteMe.com/res/img-recipe/empty.jpg";
 
-            if (upImage.PostedFile != null)
+            if (upImage.HasFile)
             {
                 string imgFile = Path.GetFileName(upImage.PostedFile.FileName);
                 imgPath = $"~/TasteMe.com/res/img-recipe/{imgFile}";

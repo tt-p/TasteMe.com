@@ -23,7 +23,7 @@ namespace Bim308_FinalProject.TasteMe.com.src.Global
             Session["user_id"] = -1;
         }
 
-        protected void Session_End(object sender, EventArgs e)
+        public void Session_End(object sender, EventArgs e)
         {
             int num = (int)Application["NumOnlineUsers"];
             num--;

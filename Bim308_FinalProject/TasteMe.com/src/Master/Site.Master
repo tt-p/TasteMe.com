@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-xs-12 col-md-3">
                     <asp:Label ID="lblUsers" CssClass="lbl-users" runat="server" Font-Size="Medium">Active Users: 1</asp:Label>
-                </div>             
+                </div>
                 <div class="header-mail col-xs-12 col-md-5">
                     <img alt="mail-logo" src="../res/icon/mail.png">
                     <a href="mailto:contact@tasteme.com"><span class="header-email">contact@tasteme.com</span></a>
