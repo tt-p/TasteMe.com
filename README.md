@@ -6,12 +6,6 @@ TasteMe.com is a web application where anyone can easily find, read, and share r
 
 ![Screenshots](rm-img/m0.png)
 
-Resources Management:
-1.	Storing material information.
-2.	Adding, removing, editing Materials.
-3.	Multiple storage management.
-4.	Keeping records of material entry/exit to the Storage.
-
 ### Running
 
 1.	Change the connection string Source to locate DB_tasteme.accdb
